@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nancy Traders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="#"><img src="/img/400_filter_nobg_6731052658ee1.webp" alt="Nancy Traders Logo" class="logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-items">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">☰</button>
+            <!-- Sign In Button -->
+            <a href="signin.html" class="sign-in-btn">Sign In</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="main-banner">
+            <h2>Your Trusted Electrical Supply Hub</h2>
+            <hr>
+            <p>Powering Your Home with Quality and Precision</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and About Section -->
+            <div class="footer-section about">
+                <h2>Nancy Traders</h2>
+                <p>Your trusted hub for quality electrical supplies. Powering your home with precision and excellence.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, LPU, Punjab</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> info@nancytraders.com</p>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 Nancy Traders | All rights reserved
+        </div>
+    </footer>
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navbarItems = document.querySelector('.navbar-items');
+
+    hamburger.addEventListener('click', () => {
+        navbarItems.classList.toggle('active');
+    });
+</script>
+
+</html>

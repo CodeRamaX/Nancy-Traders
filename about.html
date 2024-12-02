@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>/* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 50px 20px;
+            background-color: #fefefe;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        /* About Text Section */
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .underline {
+            width: 60px;
+            height: 4px;
+            background-color: #a31515;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        /* About Image Section */
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        </style>
+</head>
+<body>
+     <header class="header">
+    <div class="logo-container">
+        <img src="/img/400_filter_nobg_6731052658ee1.webp" alt="Nancy Traders Logo" class="logo">
+    </div>
+    <nav class="navbar">
+        <ul class="navbar-items">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">☰</button>
+        <!-- Sign In Button -->
+        <a href="signin.html" class="sign-in-btn">Sign In</a>
+    </nav>
+</header>
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <div class="underline"></div>
+                <p>
+                    Welcome to Nancy Traders, your trusted destination for quality electronics! We offer a diverse range of products, 
+                    from household gadgets to essential tech accessories, all with expert guidance and personalized support. 
+                    Family-owned and customer-focused, our values of honesty and integrity drive everything we do. 
+                    Whether upgrading devices or exploring new tech, we're here to make your shopping experience seamless 
+                    and enjoyable. Visit Nancy Traders today for exceptional service and the latest in technology!
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="https://files.cdn-files-a.com/uploads/9941272/2000_6730f9ba29beb.png" alt="Nancy Traders Products">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and About Section -->
+            <div class="footer-section about">
+                <h2>Nancy Traders</h2>
+                <p>Your trusted hub for quality electrical supplies. Powering your home with precision and excellence.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, LPU, Punjab</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> info@nancytraders.com</p>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 Nancy Traders | All rights reserved
+        </div>
+    </footer>
+</body>
+</html>

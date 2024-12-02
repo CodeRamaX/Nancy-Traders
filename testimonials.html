@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Nancy Traders</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>/* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #d12020, #f05454);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .hero p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 50px 20px;
+            background: #fff;
+        }
+        
+        .testimonials .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .testimonial-card {
+            background: #fefefe;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .stars span {
+            color: gold;
+            font-size: 1.2rem;
+        }
+        
+        .author {
+            font-weight: bold;
+            margin-top: 15px;
+            color: #555;
+        }
+        
+        .author span {
+            color: #999;
+        }
+        </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="/img/400_filter_nobg_6731052658ee1.webp" alt="Nancy Traders Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-items">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">☰</button>
+            <!-- Sign In Button -->
+            <a href="signin.html" class="sign-in-btn">Sign In</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <!-- <section class="hero">
+        <div class="container">
+            <h1>What Our Customers Say</h1>
+            <p>Trusted by contractors, homeowners, and businesses alike. Here's what they think about Nancy Traders.</p>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div style="text-align: center; font-size: 40px;" >TESTIMONIALS</div>
+        <div style="color: #d12020;text-align:center; margin-top: -5px;padding-bottom: 10px;">__________________</div>
+        <div class="container">
+            <div class="testimonial-card">
+                <p class="quote">“Nancy Traders is the best place for all my electrical needs. Great products and exceptional customer service!”</p>
+                <div class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="author">Rohit: <span>Contractor</span></p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">“I love shopping here. They have a wide variety of products and the staff is extremely helpful!”</p>
+                <div class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="author">Priya: <span>Interior Designer</span></p>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">“Reliable, affordable, and high-quality. Nancy Traders always delivers on time.”</p>
+                <div class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="author">Amit: <span>Business Owner</span></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and About Section -->
+            <div class="footer-section about">
+                <h2>Nancy Traders</h2>
+                <p>Your trusted hub for quality electrical supplies. Powering your home with precision and excellence.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, LPU, Punjab</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> info@nancytraders.com</p>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 Nancy Traders | All rights reserved
+        </div>
+    </footer>
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navbarItems = document.querySelector('.navbar-items');
+
+    hamburger.addEventListener('click', () => {
+        navbarItems.classList.toggle('active');
+    });
+</script>
+    <!-- Footer -->
+   
+</body>
+</html>

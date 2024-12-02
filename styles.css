@@ -1,0 +1,765 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-size: cover;
+    background-image: url(/img/vivid-blurred-colorful-background.jpg);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1e22;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    /* color: #4caf50; */
+    /* text-decoration: underline; */
+}
+
+/* Hero Section */
+.hero {
+    background: url("https://vguard.com/cdn/shop/collections/RH__Desktop_1.jpg?v=1730480575") no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Main Banner */
+.main-banner {
+    background: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    /* Responsive width */
+    max-width: 800px;
+    /* Limit maximum size */
+    text-align: center;
+}
+
+.main-banner h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.main-banner hr {
+    width: 50px;
+    margin: 10px auto;
+    border: 2px solid #4caf50;
+}
+
+.main-banner p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Media Query for Smaller Devices */
+@media (max-width: 1600px) {
+    .main-banner {
+        padding: 15px;
+        width: 95%;
+        /* Adjust for smaller screens */
+    }
+
+    .main-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-banner p {
+        font-size: 0.9rem;
+    }
+}
+
+.main-banner {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.main-banner h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.main-banner hr {
+    width: 50px;
+    margin: 10px auto;
+    border: 2px solid #4caf50;
+}
+
+.main-banner p {
+    font-size: 1rem;
+    color: #666;
+}
+
+*/
+
+/* Product Banner */
+.product-banner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product-banner img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+/* footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #1c1e22;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100;
+} */
+/* General Footer Styling */
+.footer {
+    background: linear-gradient(to right, #1c1e22, #4caf50);
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1 1 250px;
+    margin: 20px 0;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: #4caf50;
+}
+
+/* Contact Section */
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-section.contact p i {
+    color: #4caf50;
+}
+
+/* Social Media Icons */
+.footer-section.social a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    background: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.footer-section.social a:hover {
+    transform: scale(1.1);
+    background: #4caf50;
+    color: white;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}
+
+/* General Reset for Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-items {
+    display: flex;
+    list-style: none;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Hero Section */
+.shop-hero {
+    background: url('/img/shop-hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+.shop-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.shop-hero p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Categories Section */
+.categories {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.category-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.category-item h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #4caf50;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #388e3c;
+}
+
+/* Footer */
+.footer {
+    background-color: #1c1e22;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.navbar-items li {
+    margin: 0 15px;
+}
+
+.sign-in-btn {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    /* border: 2px; */
+    border-radius: 15px;
+    background-color: rgb(31, 68, 204);
+    padding: 10px;
+
+}
+
+.navbar-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* word-spacing: 120px; */
+    /* text-spacing-trim: 10px; */
+    letter-spacing: 0.9px;
+}
+
+.navbar-items a:hover {
+    /* color: #4caf50;
+    text-decoration: wavy; */
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Navbar: Collapsed Menu */
+@media (max-width: 500px) {
+    .navbar-items {
+        display: none;
+        /* Hide navbar items by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #1c1e22;
+        width: 100%;
+        /* Full width */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-items li {
+        margin: 10px 0;
+        /* Add spacing between items */
+    }
+
+    .hamburger {
+        display: block;
+        /* Show hamburger button */
+    }
+
+    .navbar-items.active {
+        display: flex;
+        /* Show items when active */
+    }
+}
+
+/* Hero Section for Accessories */
+.accessories-hero {
+    background: url('/img/accessories-hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+.accessories-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.accessories-hero p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Featured Accessories Section */
+.featured-accessories {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.featured-accessories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.accessories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.accessory-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accessory-item:hover {
+    transform: scale(1.05);
+}
+
+.accessory-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.accessory-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.accessory-item p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.accessory-item button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accessory-item button:hover {
+    background-color: #388e3c;
+}
+
+/* Popular Categories Section */
+.popular-categories {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-categories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.category-item h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #4caf50;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1e22;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-container img {
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-items {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-items li {
+    margin: 0 10px;
+}
+
+.navbar-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar-items a:hover,
+.navbar-items .active {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* About Us Banner */
+.about-us-banner {
+    background-image: url('/img/banner-image.jpg');
+    /* Replace with your banner image path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    position: relative;
+}
+
+.about-us-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for text contrast */
+    z-index: 1;
+}
+
+.about-us-banner h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.about-us-banner p {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* About Content Section */
+.about-content-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-image: url(https://files.cdn-files-a.com/uploads/9941272/2000_6730f94d5ec3d.png);
+}
+
+.about-info,
+.about-values {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-info h2,
+.about-values h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    border-left: 4px solid #4caf50;
+    padding-left: 10px;
+}
+
+.about-info p,
+.about-values p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
